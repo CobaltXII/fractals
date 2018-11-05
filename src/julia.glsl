@@ -16,6 +16,9 @@ uniform vec2 glx_Factor;
 float jc_re = 0.0 - 0.4;
 float jc_im = 0.0 + 0.6;
 
+// float jc_re = 0.0 - 0.8350;
+// float jc_im = 0.0 - 0.2321;
+
 float max_iter = 2048.0f;
 
 void main()
