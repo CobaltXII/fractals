@@ -486,6 +486,17 @@ int main(int argc, char** argv)
 
 		*/
 
+		const Uint8* keys = SDL_GetKeyboardState(NULL);
+
+		if (keys[SDL_SCANCODE_Q])
+		{
+			sdl_wheel = -1;
+		}
+		else if (keys[SDL_SCANCODE_A])
+		{
+			sdl_wheel = 1;
+		}
+
 		if (sdl_wheel && !sdl_mouse_ol && !sdl_mouse_l)
 		{
 			double center_re = (pan_min_re + (pan_max_re - pan_min_re) / 2.0);
