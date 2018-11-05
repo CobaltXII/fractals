@@ -486,6 +486,9 @@ int main(int argc, char** argv)
 
 		*/
 
+		double c_re = pan_min_re + sdl_mouse_x * 2 * fractal_factor_re;
+		double c_im = pan_min_im + sdl_mouse_y * 2 * fractal_factor_im;
+
 		const Uint8* keys = SDL_GetKeyboardState(NULL);
 
 		if (keys[SDL_SCANCODE_Q])
@@ -501,6 +504,12 @@ int main(int argc, char** argv)
 		{
 			double center_re = (pan_min_re + (pan_max_re - pan_min_re) / 2.0);
 			double center_im = (pan_min_im + (pan_max_im - pan_min_im) / 2.0);
+
+			if (keys[SDL_SCANCODE_SPACE])
+			{
+				center_re = c_re;
+				center_im = c_im;
+			}
 
 			double zoom = 1.05;
 
@@ -538,9 +547,6 @@ int main(int argc, char** argv)
 		Handle panning.
 
 		*/
-
-		double c_re = pan_min_re + sdl_mouse_x * 2 * fractal_factor_re;
-		double c_im = pan_min_im + sdl_mouse_y * 2 * fractal_factor_im;
 
 		if (!sdl_mouse_ol && sdl_mouse_l)
 		{
