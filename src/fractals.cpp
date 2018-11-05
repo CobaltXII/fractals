@@ -144,7 +144,7 @@ int main(int argc, char** argv)
 
 	SDL_Window* sdl_window = SDL_CreateWindow
 	(
-		(std::string("Shaker - ") + usr_fragment_path).c_str(),
+		(std::string("Fractals - ") + usr_fragment_path).c_str(),
 
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
