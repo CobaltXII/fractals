@@ -13,11 +13,26 @@ uniform vec2 glx_Imag;
 
 uniform vec2 glx_Factor;
 
-float jc_re = 0.0 - 0.4;
-float jc_im = 0.0 + 0.6;
+// float jc_re = 0.0 - 0.70123;
+// float jc_im = 0.0 + 0.27015;
 
-// float jc_re = 0.0 - 0.8350;
-// float jc_im = 0.0 - 0.2321;
+// float jc_re = 0.0 - 0.4;
+// float jc_im = 0.0 + 0.6;
+
+// float jc_re = 0.0 - 0.70176;
+// float jc_im = 0.0 - 0.38420;
+
+float jc_re = 0.0 - 0.8350;
+float jc_im = 0.0 - 0.2321;
+
+// float jc_re = 0.0 - 0.800;
+// float jc_im = 0.0 + 0.156;
+
+// float jc_re = 0.0 - 0.7269;
+// float jc_im = 0.0 + 0.1889;
+
+// float jc_re = 0.0 + 0.0;
+// float jc_im = 0.0 - 0.8;
 
 float max_iter = 2048.0f;
 
