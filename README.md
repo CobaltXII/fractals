@@ -44,4 +44,4 @@ Fractals requires a machine that supports a minimum of OpenGL 3.2 Core. This is 
 
 ## License
 
-Fractals is licensed under the GNU GPLv3. SDL2 is licensed under the zlib license.
+This repository is licensed under the MIT License.
